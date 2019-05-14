@@ -1,0 +1,116 @@
+[
+	{
+		"name": "India",
+		"popularCities": [ "Mumbai", "Hyderabad", "Agra", "Jaipur", "New Delhi" ],
+		"attractions": [
+			"Taj Mahal",
+			"Hawa Mahal",
+			"Amber Fort",
+			"Charminar",
+			"Red Fort",
+			"India Gate",
+			"Humayun's Tomb"
+		],
+		"popularFoods": [ "Biryani", "Dosa", "Samosa", "Chaat", "Chai" ],
+		"languagesSpoken": [ "Hindi", "Urdu" ],
+		"climate": "Hot",
+		"activities": [ "Dining", "Shopping", "Historic Sightseeing" ],
+		"images": [ "/images/india1.jpg", "/images/india2.jpg" ]
+	},
+	{
+		"name": "Qatar",
+		"popularCities": [ "Doha" ],
+		"attractions": [ "Souq Waqif", "Banana Island", "The Pearl", "Sealine Beach" ],
+		"popularFoods": [ "Kabsa", "Kabobs", "Umm Ali", "Karak" ],
+		"languagesSpoken": [ "Arabic" ],
+		"climate": "Hot",
+		"activities": [ "Dining", "Shopping", "Desert Safari", "Sandboarding", "Camel Riding" ],
+		"images": [ "/images/qatar1.jpg" ]
+	},
+	{
+		"name": "Canada",
+		"popularCities": [ "Toronto", "Montreal" ],
+		"attractions": [ "Toronto Islands", "CN Tower", "Casa Loma", "Distillery District", "Kensington Market" ],
+		"popularFoods": [ "Maple Syrup", "Poutine" ],
+		"languagesSpoken": [ "English", "French" ],
+		"climate": "Cold",
+		"activities": [ "Dining", "Museums", "Sightseeing", "Nature" ],
+		"images": [ "/images/canada1.jpg" ]
+	},
+	{
+		"name": "Iceland",
+		"popularCities": [ "Reykjavik" ],
+		"attractions": [
+			"Vatnajökull National Park",
+			"Þingvellir National Park",
+			"Jokulsarlon Glacier Lagoon",
+			"The Golden Circle",
+			"Blue Lagoon"
+		],
+		"popularFoods": [ "Fish" ],
+		"languagesSpoken": [ "English", "Icelandic" ],
+		"climate": "Cold",
+		"activities": [ "Nature", "Snorkelling", "Glacier Hike" ],
+		"images": [ "/images/iceland1.jpg", "/images/iceland2.jpg", "/images/iceland3.jpg" ]
+	},
+	{
+		"name": "Ireland",
+		"popularCities": [ "Dublin" ],
+		"attractions": [ "Cliffs of Moher" ],
+		"popularFoods": [ "Irish Stew", "Colcannon" ],
+		"languagesSpoken": [ "English", "Irish" ],
+		"climate": "Cold",
+		"activities": [ "Nature", "Dining", "Sightseeing" ],
+		"images": [ "/images/ireland.jpg", "/images/ireland2.jpg" ]
+	},
+	{
+		"name": "Northern Ireland",
+		"popularCities": [ "Belfast" ],
+		"attractions": [ "Giant's Causeway", "Carrick-a-Rede Rope Bridge", "Dark Hedges", "Belfast Castle" ],
+		"popularFoods": [ "Soda bread", "Ulster fry" ],
+		"languagesSpoken": [ "English", "Irish" ],
+		"climate": "Cold",
+		"activities": [ "Nature", "Dining", "Sightseeing" ],
+		"images": [ "/images/northernIreland.jpg", "images/northernIreland1.jpg" ]
+	},
+	{
+		"name": "Scotland",
+		"popularCities": [ "Edinborough", "Glasgow" ],
+		"attractions": [ "Edinborough Castle", "Isle of Skye", "Scottish Highlands" ],
+		"popularFoods": [ "Shortbread", "Haggis" ],
+		"languagesSpoken": [ "English", "Scots", "Scottish Gaelic" ],
+		"climate": "Cold",
+		"activities": [ "Nature", "Dining", "Sightseeing" ],
+		"images": [ "/images/scotland1.jpg", "/images/scotland2.jpg" ]
+	},
+	{
+		"name": "United Arab Emirates",
+		"popularCities": [ "Dubai", "Abu Dhabi" ],
+		"attractions": [ "Burj Dubai", "Burj Al-Arab", "The Dubai Mall", "Palm Jumeirah", "Sheikh Zayed Grand Mosque" ],
+		"popularFoods": [ "Maqluba", "Harees" ],
+		"languagesSpoken": [ "Arabic" ],
+		"climate": "Hot",
+		"activities": [ "Desert Safari", "Beaches", "Nature", "Sightseeing" ],
+		"images": [ "/images/uae1.jpg" ]
+	},
+	{
+		"name": "France",
+		"popularCities": [ "Paris", "Versailles" ],
+		"attractions": [ "Eiffel Tower", "Palace of Versailles", "Louvre Museum" ],
+		"popularFoods": [ "Crepes", "Macarons" ],
+		"languagesSpoken": [ "French" ],
+		"climate": "Moderate",
+		"activities": [ "Art", "Museums", "Sightseeing", "Dining" ],
+		"images": [ "/images/paris1.jpg" ]
+	},
+	{
+		"name": "England",
+		"popularCities": [ "London", "Oxford" ],
+		"attractions": [ "Oxford University", "London Eye" ],
+		"popularFoods": [ "Fish & Chips" ],
+		"languagesSpoken": [ "English" ],
+		"climate": "Cold",
+		"activities": [ "Museums", "Historic Sighseeing", "Dining" ],
+		"images": [ "/images/england1.jpg" ]
+	}
+]
