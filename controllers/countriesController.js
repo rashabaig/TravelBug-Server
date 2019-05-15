@@ -27,11 +27,15 @@ router.post('/', (req, res) => {
 //works
 
 router.put('/newAttraction/:countryID', (req, res) => {
-	CountryModel.update({ _id: req.params.countryID }, { $push: { attractions: req.body } }).then((updatedCountry) => {
+	console.log(req.body);
+	CountryModel.updateOne(
+		{ _id: req.params.countryID },
+		{ $push: { attractions: req.body.attractions } }
+	).then((updatedCountry) => {
 		res.json(updatedCountry);
 	});
 });
-//doesn't work yet
+//works
 router.delete('/:id', (req, res) => {
 	CountryModel.deleteOne({ _id: req.params.id }).then((deleted) => {
 		res.json(deleted);

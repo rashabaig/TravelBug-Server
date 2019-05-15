@@ -2,10 +2,12 @@ const express = require('express');
 const app = express();
 const parser = require('body-parser');
 const countriesController = require('./controllers/countriesController');
+const cors = require('cors');
 
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 app.use(express.static('public'));
+app.use(cors());
 
 app.use('/countries/', countriesController);
 
