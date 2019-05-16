@@ -4,6 +4,13 @@ const parser = require('body-parser');
 const countriesController = require('./controllers/countriesController');
 const cors = require('cors');
 
+// const storage = multer.diskStorage({
+// 	destination: '/public/images/',
+// 	filename: function(req, file, callBack) {
+// 		callBack(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+// 	}
+// });
+
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 app.use(express.static('public'));
