@@ -92,7 +92,7 @@ router.put('/newLanguage/:countryID', (req, res) => {
 	console.log(req.body);
 	CountryModel.updateOne(
 		{ _id: req.params.countryID },
-		{ $push: { languagesSpoken: req.body.LanguagesSpoken } }
+		{ $push: { languagesSpoken: req.body.languagesSpoken } }
 	).then((updatedCountry) => {
 		res.json(updatedCountry);
 	});

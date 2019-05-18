@@ -1,6 +1,6 @@
 [
 	{
-		"name": "India",
+		"name": "india",
 		"popularCities": [ "Mumbai", "Hyderabad", "Agra", "Jaipur", "New Delhi" ],
 		"attractions": [
 			"Taj Mahal",
@@ -18,7 +18,7 @@
 		"images": [ "/images/india1.jpg", "/images/india2.jpg" ]
 	},
 	{
-		"name": "Qatar",
+		"name": "qatar",
 		"popularCities": [ "Doha" ],
 		"attractions": [ "Souq Waqif", "Banana Island", "The Pearl", "Sealine Beach" ],
 		"popularFoods": [ "Kabsa", "Kabobs", "Umm Ali", "Karak" ],
@@ -28,7 +28,7 @@
 		"images": [ "/images/qatar1.jpg" ]
 	},
 	{
-		"name": "Canada",
+		"name": "canada",
 		"popularCities": [ "Toronto", "Montreal" ],
 		"attractions": [ "Toronto Islands", "CN Tower", "Casa Loma", "Distillery District", "Kensington Market" ],
 		"popularFoods": [ "Maple Syrup", "Poutine" ],
@@ -38,7 +38,7 @@
 		"images": [ "/images/canada1.jpg" ]
 	},
 	{
-		"name": "Iceland",
+		"name": "iceland",
 		"popularCities": [ "Reykjavik" ],
 		"attractions": [
 			"Vatnajökull National Park",
@@ -54,7 +54,7 @@
 		"images": [ "/images/iceland1.jpg", "/images/iceland2.jpg", "/images/iceland3.jpg" ]
 	},
 	{
-		"name": "Ireland",
+		"name": "ireland",
 		"popularCities": [ "Dublin" ],
 		"attractions": [ "Cliffs of Moher" ],
 		"popularFoods": [ "Irish Stew", "Colcannon" ],
@@ -64,7 +64,7 @@
 		"images": [ "/images/ireland.jpg", "/images/ireland2.jpg" ]
 	},
 	{
-		"name": "Northern Ireland",
+		"name": "northern ireland",
 		"popularCities": [ "Belfast" ],
 		"attractions": [ "Giant's Causeway", "Carrick-a-Rede Rope Bridge", "Dark Hedges", "Belfast Castle" ],
 		"popularFoods": [ "Soda bread", "Ulster fry" ],
@@ -74,7 +74,7 @@
 		"images": [ "/images/northernIreland.jpg", "images/northernIreland1.jpg" ]
 	},
 	{
-		"name": "Scotland",
+		"name": "scotland",
 		"popularCities": [ "Edinborough", "Glasgow" ],
 		"attractions": [ "Edinborough Castle", "Isle of Skye", "Scottish Highlands" ],
 		"popularFoods": [ "Shortbread", "Haggis" ],
@@ -84,7 +84,7 @@
 		"images": [ "/images/scotland1.jpg", "/images/scotland2.jpg" ]
 	},
 	{
-		"name": "United Arab Emirates",
+		"name": "united arab emirates",
 		"popularCities": [ "Dubai", "Abu Dhabi" ],
 		"attractions": [ "Burj Dubai", "Burj Al-Arab", "The Dubai Mall", "Palm Jumeirah", "Sheikh Zayed Grand Mosque" ],
 		"popularFoods": [ "Maqluba", "Harees" ],
@@ -94,7 +94,7 @@
 		"images": [ "/images/uae1.jpg" ]
 	},
 	{
-		"name": "France",
+		"name": "france",
 		"popularCities": [ "Paris", "Versailles" ],
 		"attractions": [ "Eiffel Tower", "Palace of Versailles", "Louvre Museum" ],
 		"popularFoods": [ "Crepes", "Macarons" ],
@@ -104,7 +104,7 @@
 		"images": [ "/images/paris1.jpg" ]
 	},
 	{
-		"name": "England",
+		"name": "england",
 		"popularCities": [ "London", "Oxford" ],
 		"attractions": [ "Oxford University", "London Eye" ],
 		"popularFoods": [ "Fish & Chips" ],
