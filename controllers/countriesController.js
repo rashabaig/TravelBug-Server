@@ -3,6 +3,7 @@ const router = express.Router();
 const CountryModel = require('../db/models/countryModel');
 const multer = require('multer');
 const path = require('path');
+const { signup } = require('../db/handlers/auth');
 
 router.get('/all', (req, res) => {
 	CountryModel.find({}).then((allcountries) => {
@@ -22,6 +23,7 @@ router.get('/:name', (req, res) => {
 router.post('/', (req, res) => {
 	let newCountry = req.body;
 	CountryModel.create(newCountry).then((newCountry) => {
+		// res.redirect(`/browse/${newCountry}`);
 		res.json(newCountry);
 		newCountry.save();
 	});
@@ -50,7 +52,8 @@ router.post('/upload', upload.single('images'), function(req, res, next) {
 		languagesSpoken: req.body.languagesSpoken,
 		climate: req.body.climate,
 		activities: req.body.activities,
-		images: `/images/${req.file.filename}`
+		images: `/images/${req.file.filename}`,
+		imagesURL: []
 	};
 
 	CountryModel.create(country).then((country) => {
@@ -65,7 +68,8 @@ router.put('/newAttraction/:countryID', (req, res) => {
 		{ _id: req.params.countryID },
 		{ $push: { attractions: req.body.attractions } }
 	).then((updatedCountry) => {
-		res.json(updatedCountry);
+		res.redirect('back');
+		updatedCountry.save();
 	});
 });
 
@@ -99,8 +103,11 @@ router.put('/newLanguage/:countryID', (req, res) => {
 });
 router.put('/changeClimate/:countryID', (req, res) => {
 	console.log(req.body);
-	CountryModel.updateOne({ _id: req.params.countryID }, { climate: req.body.climate }).then((updatedCountry) => {
-		res.json(updatedCountry);
+	CountryModel.updateOne(
+		{ _id: req.params.countryID },
+		{ $push: { climate: req.body.climate } }
+	).then((updatedCountry) => {
+		res.redirect(`/edit/${updatedCountry.name}`);
 	});
 });
 
@@ -114,10 +121,31 @@ router.put('/newActivity/:countryID', (req, res) => {
 	});
 });
 //works
+router.put('/newImage/:countryID', (req, res) => {
+	console.log(req.body);
+	CountryModel.updateOne(
+		{ _id: req.params.countryID },
+		{ $push: { imagesURL: req.body.imagesURL } }
+	).then((updatedCountry) => {
+		res.json(updatedCountry);
+	});
+});
 router.delete('/:id', (req, res) => {
 	CountryModel.deleteOne({ _id: req.params.id }).then((deleted) => {
 		res.json(deleted);
 	});
 });
 //works
+
+router.put('/language/:countryID/:language', (req, res) => {
+	CountryModel.update(
+		{ _id: req.params.countryID },
+		{ $pull: { languagesSpoken: { languagesSpoken: req.params.language } } }
+	).then((updatedCountry) => {
+		res.json(updatedCountry);
+	});
+});
+
+// router.post('/signup', signup);
+
 module.exports = router;

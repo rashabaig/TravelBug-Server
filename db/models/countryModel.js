@@ -6,9 +6,10 @@ const CountryModel = new mongoose.Schema({
 	attractions: [ String ],
 	popularFoods: [ String ],
 	languagesSpoken: [ String ],
-	climate: String,
+	climate: [ String ],
 	activities: [ String ],
-	images: [ String ]
+	images: [ String ],
+	imagesURL: [ String ]
 });
 
 module.exports = mongoose.model('Country', CountryModel);
